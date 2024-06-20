@@ -7,5 +7,11 @@
 //utilities (margin, padding, opacity)
 @import "utilities";
 
+// responsive layout
+@import "breakpoints";
+
+// components
+@import "components/navbar";
+
 // using charts.css
 @import "../../node_modules/charts.css/dist/charts.css";

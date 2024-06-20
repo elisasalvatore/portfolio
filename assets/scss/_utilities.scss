@@ -1,0 +1,7 @@
+// PROPRIETA' FLEX
+// proprietà flex per centrare ogni elemento sia in verticale che in orizzontale
+@mixin flex-center-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

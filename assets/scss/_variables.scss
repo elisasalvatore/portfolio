@@ -1,0 +1,26 @@
+// Colors
+$bg-light: #fff;
+$text-light: #333;
+$special-color: red;
+
+// Fonts
+$title-size: 2.6em;
+
+// colore e dimensione dei titoli h2
+@mixin title-style {
+    font-size: $title-size;
+    color: $text-light;
+    width: 100%;
+
+    @include md {
+        font-size: 2.8em;
+    }
+
+    @include lg {
+        font-size: 3em;
+    }
+
+    @include xl {
+        font-size: 5em;
+    }
+}
