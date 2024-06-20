@@ -1,0 +1,15 @@
+.title-hello {
+    h1 {
+        font-size: 25vw;
+        color: $text-light;
+        width: 100%;
+
+        @include xl {
+            font-size: 400px;
+        }
+
+        span {
+            color: $special-color;
+        }
+    }
+}
