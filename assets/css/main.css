@@ -10,6 +10,41 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
+body .section {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+}
+@media (min-width: 720px) {
+  body .section {
+    padding-top: 120px;
+  }
+}
+body .section .content {
+  width: 80vw;
+  height: 100%;
+}
+body .section .content .title {
+  font-size: 2.6em;
+  color: #333;
+  width: 100%;
+}
+@media (min-width: 720px) {
+  body .section .content .title {
+    font-size: 2.8em;
+  }
+}
+@media (min-width: 960px) {
+  body .section .content .title {
+    font-size: 3em;
+  }
+}
+@media (min-width: 1200px) {
+  body .section .content .title {
+    font-size: 5em;
+  }
+}
 
 .navbar {
   display: flex;
