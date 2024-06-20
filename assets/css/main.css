@@ -160,6 +160,11 @@ body .title-custom {
 #about-me .content .aboutme-infos {
   flex-direction: column;
 }
+@media (min-width: 960px) {
+  #about-me .content .aboutme-infos {
+    padding-left: 60px;
+  }
+}
 #about-me .content .aboutme-infos .aboutme-list {
   width: 100%;
   color: #333;
@@ -189,14 +194,77 @@ body .title-custom {
   height: 100%;
   object-fit: fill;
 }
+
+@media (min-width: 720px) {
+  #skills .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#skills .content .skills-infos {
+  flex-direction: column;
+  margin-bottom: 0;
+}
 @media (min-width: 960px) {
-  #about-me .content .aboutme-image img {
-    margin-left: 160px;
+  #skills .content .skills-infos {
+    padding-left: 60px;
+  }
+}
+#skills .content .skills-infos .skills-p {
+  text-align: justify;
+  line-height: 1.8em;
+  font-size: 0.9em;
+}
+@media (min-width: 720px) {
+  #skills .content .skills-infos .skills-p {
+    font-size: 1em;
+  }
+}
+#skills .content .skills-chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+@media (min-width: 960px) {
+  #skills .content .skills-chart {
+    padding-left: 30px;
   }
 }
 @media (min-width: 1200px) {
-  #about-me .content .aboutme-image img {
-    margin-left: 210px;
+  #skills .content .skills-chart {
+    padding-left: 50px;
+  }
+}
+#skills .content .skills-chart .pie {
+  width: 200px;
+  height: 200px;
+  font-size: 0.8em;
+}
+@media (min-width: 480px) {
+  #skills .content .skills-chart .pie {
+    width: 225px;
+    height: 225px;
+  }
+}
+@media (min-width: 720px) {
+  #skills .content .skills-chart .pie {
+    width: 250px;
+    height: 250px;
+    font-size: 1em;
+  }
+}
+@media (min-width: 960px) {
+  #skills .content .skills-chart .pie {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #skills .content .skills-chart .pie {
+    width: 350px;
+    height: 350px;
   }
 }
 

@@ -1,0 +1,68 @@
+#skills {
+    .content {
+        @include md {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .skills-infos {
+            flex-direction: column;
+            margin-bottom: 0;
+
+            @include lg {
+                padding-left: 60px;
+            }
+
+            .skills-p {
+                text-align: justify;
+                line-height: 1.8em;
+                font-size: 0.9em;
+
+                @include md {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        .skills-chart {
+            @include flex-center-all;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            @include lg {
+                padding-left: 30px;
+            }
+
+            @include xl {
+                padding-left: 50px;
+            }
+
+            .pie {
+                width: 200px;
+                height: 200px;
+                font-size: 0.8em;
+
+                @include sm {
+                    width: 225px;
+                    height: 225px;
+                }
+
+                @include md {
+                    width: 250px;
+                    height: 250px;
+                    font-size: 1em;
+                }
+
+                @include lg {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                @include xl {
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
