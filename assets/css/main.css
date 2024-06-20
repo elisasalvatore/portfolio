@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+  background-color: #fff;
 }
 body .section {
   width: 100vw;
@@ -51,6 +52,7 @@ body .title-custom {
   font-size: 2.6em;
   color: #333;
   width: 100%;
+  padding: 20px 0;
 }
 @media (min-width: 720px) {
   body .title-custom {
@@ -245,7 +247,7 @@ body .title-custom {
 }
 @media (min-width: 960px) {
   #skills .content .skills-chart {
-    padding-left: 30px;
+    padding-left: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -281,6 +283,61 @@ body .title-custom {
 #skills .content .skills-chart .column td {
   width: 50px;
   border-top-right-radius: 20px;
+}
+
+#projects .content .projects-infos {
+  flex-direction: column;
+  background-color: burlywood;
+}
+@media (min-width: 720px) {
+  #projects .content .projects-infos {
+    width: 100%;
+    text-align: center;
+  }
+}
+#projects .content .projects-infos .title-custom {
+  padding: 20px 0;
+}
+#projects .content .projects-infos .projects-card-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+@media (min-width: 720px) {
+  #projects .content .projects-infos .projects-card-group {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#projects .content .projects-infos .projects-card-group .card-project {
+  width: 250px;
+  height: 130px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  background-color: orange;
+}
+@media (min-width: 720px) {
+  #projects .content .projects-infos .projects-card-group .card-project {
+    justify-content: space-between;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 960px) {
+  #projects .content .projects-infos .projects-card-group .card-project {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  #projects .content .projects-infos .projects-card-group .card-project {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

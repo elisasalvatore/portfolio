@@ -11,6 +11,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
+    background-color: $bg-light;
 
     .section {
         width: 100vw;
@@ -51,5 +52,6 @@ body {
 
     .title-custom {
         @include title-style;
+        padding: 20px 0;
     }
 }

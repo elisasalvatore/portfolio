@@ -1,0 +1,57 @@
+#projects {
+    .content {
+        .projects-infos {
+            flex-direction: column;
+            background-color: burlywood;
+
+            @include md {
+                width: 100%;
+                // height: 500px;
+                text-align: center;
+            }
+
+            .title-custom {
+                padding: 20px 0;
+            }
+
+            .projects-card-group {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: red;
+
+                @include md {
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                .card-project {
+                    width: 250px;
+                    height: 130px;
+                    padding: 0 20px;
+                    margin-bottom: 20px;
+                    background-color: orange;
+
+                    @include md {
+                        justify-content: space-between;
+                        width: 200px;
+                        height: 200px;
+                        margin-bottom: 0px;
+                    }
+
+                    @include lg {
+                        width: 250px;
+                        height: 250px;
+                    }
+
+                    @include xl {
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
