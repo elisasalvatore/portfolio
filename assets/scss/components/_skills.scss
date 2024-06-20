@@ -1,4 +1,10 @@
 #skills {
+    padding-top: 105px;
+
+    @include md {
+        padding-top: 120px;
+    }
+
     .content {
         @include md {
             flex-direction: row;
