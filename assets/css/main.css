@@ -413,4 +413,26 @@ body .title-custom {
   }
 }
 
+footer {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .container-fluid div {
+  font-size: 0.8em;
+}
+@media (min-width: 960px) {
+  footer .container-fluid div {
+    font-size: 1em;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

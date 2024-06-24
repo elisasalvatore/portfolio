@@ -1,0 +1,18 @@
+footer {
+    width: 100vw;
+    height: 100px;
+    @include flex-center-all;
+
+    .container-fluid {
+        @include flex-center-all;
+        flex-direction: column;
+
+        div {
+            font-size: 0.8em;
+
+            @include lg {
+                font-size: 1em;
+            }
+        }
+    }
+}
