@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Adding favicon -->
+    <link rel="shortcut icon" href="../assets/images/logos/elisi-logo-000.png">
+</head>
+
+<body>
+    <!-- START Navbar -->
+    <nav class="navbar fixed-top text-bg-light">
+        <div class="container-fluid">
+            <!-- Navbar left side -->
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="../assets/images/logos/elisi-logo-000.png" alt="logo">
+                </div>
+            </div>
+
+            <!-- Navbar right side -->
+            <div class="nav-right">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-top w-100 h-100" tabindex="-1" id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel" data-bs-dismiss="offcanvas">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav text-center pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html#hero">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#about-me">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#projects">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END Navbar -->
+
+    <div id="contact" class="section">
+        <div class="content container-fluid">
+            <div class="box contact-infos flex-column">
+                <h2 class="title-custom">Contacts</h2>
+                <p class="text-justify">If you have any other question, please get in touch through my contacts or
+                    send
+                    me a compiled form.
+                </p>
+
+                <ul>
+                    <li>telefono</li>
+                    <li>email</li>
+                    <li>profilo linkedin</li>
+                    <li>profilo github</li>
+                </ul>
+            </div>
+
+            <div class="box contact-form flex-wrap">
+                <h2 class="title-custom fs-1">Let's get in touch!</h2>
+                <div>
+                    form con emailjs
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- START Footer -->
+    <footer class="text-bg-light">
+        <div class="container-fluid p-3">
+            <div class="made-by">Made with Love by Elisa Salvatore.</div>
+            <div class="copyright">©2024. All rights reserved.</div>
+        </div>
+    </footer>
+    <!-- END Footer -->
+
+    <!-- START 'Back to the top' button -->
+    <a class="btn-back-top">
+        <img src="./node_modules/bootstrap-icons/icons/arrow-up-circle-fill.svg" alt="arrow up icon">
+    </a>
+    <!-- END 'Back to the top' button -->
+
+    <!-- JS Custom script -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
