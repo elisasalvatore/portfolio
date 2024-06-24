@@ -11,6 +11,8 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- Adding favicon -->
     <link rel="shortcut icon" href="../assets/images/logos/elisi-logo-000.png">
@@ -66,30 +68,58 @@
 
     <div id="contact" class="section">
         <div class="content container-fluid">
-            <div class="box contact-infos flex-column">
+            <div class="box contact-infos">
                 <h2 class="title-custom">Contacts</h2>
-                <p class="text-justify">If you have any other question, please get in touch through my contacts or
-                    send
-                    me a compiled form.
+                <p>
+                    If you have any other question, please get in touch through my contacts or send me a compiled form.
                 </p>
 
                 <ul>
-                    <li>telefono</li>
-                    <li>email</li>
-                    <li>profilo linkedin</li>
-                    <li>profilo github</li>
+                    <li>
+                        <i class="bi bi-telephone-fill"></i>
+                        <a href="tel:+390123456789">0123456789</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:elisatest@gmail.com">elisatest@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/elisa-salvatore" target="_blank">Elisa Salvatore</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-github"></i>
+                        <a href="https://github.com/ElisaSalvatore" target="_blank">ElisaSalvatore</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="box contact-form flex-wrap">
                 <h2 class="title-custom fs-1">Let's get in touch!</h2>
-                <div>
-                    form con emailjs
+                <!-- Form -->
+                <div class="form">
+                    <!-- Email -->
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <!-- Text area -->
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2"
+                          style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Message</label>
+                    </div>
+                    <button type="button" class="btn">Send</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- START 'Back to the top' button -->
+    <a class="btn-back-top">
+        <img src="../node_modules/bootstrap-icons/icons/arrow-up-circle-fill.svg" alt="arrow up icon">
+    </a>
+    <!-- END 'Back to the top' button -->
 
     <!-- START Footer -->
     <footer class="text-bg-light">
@@ -100,14 +130,8 @@
     </footer>
     <!-- END Footer -->
 
-    <!-- START 'Back to the top' button -->
-    <a class="btn-back-top">
-        <img src="./node_modules/bootstrap-icons/icons/arrow-up-circle-fill.svg" alt="arrow up icon">
-    </a>
-    <!-- END 'Back to the top' button -->
-
     <!-- JS Custom script -->
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>
