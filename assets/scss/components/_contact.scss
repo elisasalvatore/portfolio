@@ -1,6 +1,18 @@
 #contact {
     height: 100%;
 
+    @include md {
+        height: 100vh;
+    }
+
+    @include lg {
+        height: 100%;
+    }
+
+    @include xl {
+        height: 100vh;
+    }
+
     .content {
         .contact-infos {
             height: 100%;

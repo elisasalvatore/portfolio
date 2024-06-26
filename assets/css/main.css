@@ -427,6 +427,21 @@ footer .container-fluid div {
 #contact {
   height: 100%;
 }
+@media (min-width: 720px) {
+  #contact {
+    height: 100vh;
+  }
+}
+@media (min-width: 960px) {
+  #contact {
+    height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #contact {
+    height: 100vh;
+  }
+}
 #contact .content .contact-infos {
   height: 100%;
   flex-direction: column;
