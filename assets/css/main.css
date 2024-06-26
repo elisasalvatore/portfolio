@@ -401,6 +401,13 @@ body .title-custom {
     padding-top: 45%;
   }
 }
+#projects .content .projects-infos .btn-to-works {
+  color: #fff;
+  background-color: red;
+}
+#projects .content .projects-infos .btn-to-works:hover {
+  background-color: #cc0000;
+}
 
 footer {
   width: 100vw;
@@ -522,6 +529,56 @@ footer .container-fluid div {
     width: 50%;
     padding: 0 10px;
   }
+}
+
+.section-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+@media (min-width: 720px) {
+  .section-work {
+    margin-top: 20px;
+  }
+}
+.section-work .content-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-work .content-work .ctn-title {
+  align-self: start;
+}
+@media (min-width: 720px) {
+  .section-work .content-work .ctn-title {
+    align-self: center;
+  }
+}
+.section-work .content-work .box-work {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: orange;
+}
+@media (min-width: 960px) {
+  .section-work .content-work .box-work {
+    flex-direction: row;
+  }
+}
+.section-work .content-work .box-work .work-mockup {
+  width: 100%;
+  height: 40vh;
+  background-color: green;
+}
+.section-work .content-work .box-work .work-infos {
+  width: 100%;
+  height: 40vh;
+  background-color: aqua;
 }
 
 /*# sourceMappingURL=main.css.map */

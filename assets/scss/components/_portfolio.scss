@@ -113,6 +113,15 @@
                     }
                 }
             }
+
+            .btn-to-works {
+                color: $text-dark;
+                background-color: $special-color;
+
+                &:hover {
+                    background-color: darken($special-color, 10%);
+                }
+            }
         }
     }
 }
