@@ -1,4 +1,10 @@
 #projects {
+    height: 100%;
+
+    @include md {
+        height: 100vh;
+    }
+
     .content {
         .projects-infos {
             flex-direction: column;

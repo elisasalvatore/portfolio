@@ -293,6 +293,14 @@ body .title-custom {
   border-top-right-radius: 20px;
 }
 
+#projects {
+  height: 100%;
+}
+@media (min-width: 720px) {
+  #projects {
+    height: 100vh;
+  }
+}
 #projects .content .projects-infos {
   flex-direction: column;
 }
