@@ -30,15 +30,15 @@
                 }
 
                 a {
-                    margin: 0 10px;
-                    margin-bottom: 20px;
                     text-decoration: none;
 
                     .card-project {
                         width: 150px;
                         height: 150px;
+                        margin: 0 10px;
+                        margin-bottom: 20px;
                         border: none;
-                        // background-color: #333;
+                        background-color: #333;
 
                         @include md {
                             justify-content: space-between;
