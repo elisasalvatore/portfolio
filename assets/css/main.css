@@ -540,6 +540,7 @@ footer .container-fluid div {
 }
 
 .section-work {
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -571,7 +572,6 @@ footer .container-fluid div {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: orange;
 }
 @media (min-width: 960px) {
   .section-work .content-work .box-work {
@@ -581,7 +581,31 @@ footer .container-fluid div {
 .section-work .content-work .box-work .work-mockup {
   width: 100%;
   height: 40vh;
-  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-work .content-work .box-work .work-mockup img {
+  width: 290px;
+  height: 200px;
+}
+@media (min-width: 720px) {
+  .section-work .content-work .box-work .work-mockup img {
+    width: 450px;
+    height: 360px;
+  }
+}
+@media (min-width: 960px) {
+  .section-work .content-work .box-work .work-mockup img {
+    width: 400px;
+    height: 310px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-work .content-work .box-work .work-mockup img {
+    width: 480px;
+    height: 350px;
+  }
 }
 .section-work .content-work .box-work .work-infos {
   width: 100%;

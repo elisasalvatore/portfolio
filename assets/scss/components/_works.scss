@@ -1,4 +1,5 @@
 .section-work {
+    height: 50vh;
     @include flex-center-all;
     margin-top: 40px;
 
@@ -23,7 +24,6 @@
             height: 80vh;
             @include flex-center-all;
             flex-direction: column;
-            background-color: orange;
 
             @include lg {
                 flex-direction: row;
@@ -32,7 +32,29 @@
             .work-mockup {
                 width: 100%;
                 height: 40vh;
-                background-color: green;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 290px;
+                    height: 200px;
+
+                    @include md {
+                        width: 450px;
+                        height: 360px;
+                    }
+
+                    @include lg {
+                        width: 400px;
+                        height: 310px;
+                    }
+
+                    @include xl {
+                        width: 480px;
+                        height: 350px;
+                    }
+                }
             }
 
             .work-infos {
