@@ -31,7 +31,6 @@
 
             .work-mockup {
                 width: 100%;
-                height: 40vh;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -59,8 +58,33 @@
 
             .work-infos {
                 width: 100%;
-                height: 40vh;
-                background-color: aqua;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                @include md {
+                    padding: 20px 120px;
+                }
+
+                @include lg {
+                    padding: 20px;
+                }
+
+                .work-title {
+                    padding: 20px 0;
+                }
+
+                p {
+                    text-align: justify;
+                    line-height: 1.8em;
+
+                    @include md {
+                        line-height: 1.8em;
+                    }
+                    @include lg {
+                        padding-right: 40px;
+                    }
+                }
             }
         }
     }
