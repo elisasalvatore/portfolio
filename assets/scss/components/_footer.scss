@@ -9,6 +9,7 @@ footer {
 
         div {
             font-size: 0.8em;
+            color: $text-light;
 
             @include lg {
                 font-size: 1em;

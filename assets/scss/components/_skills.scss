@@ -14,6 +14,7 @@
             }
 
             .skills-p {
+                color: var(--lightColor);
                 text-align: justify;
                 line-height: 1.8em;
                 font-size: 0.9em;
@@ -53,9 +54,13 @@
                     width: 450px;
                 }
 
-                td {
-                    width: 50px;
-                    border-top-right-radius: 20px;
+                tr {
+                    color: var(--lightColor);
+
+                    td {
+                        width: 50px;
+                        border-top-right-radius: 20px;
+                    }
                 }
             }
         }

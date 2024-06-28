@@ -2,10 +2,12 @@
 // Light theme
 $bg-light: #fff;
 $text-light: #333;
-$special-color: red;
+$special-color: #c91f1a;
 
 // Dark theme
 $text-dark: #fff;
+$bg-dark: #333;
+$special-color-dark: #ffbd07;
 
 // Fonts
 $title-size: 2.6em;
@@ -13,7 +15,7 @@ $title-size: 2.6em;
 // colore e dimensione dei titoli h2
 @mixin title-style {
     font-size: $title-size;
-    color: $text-light;
+    color: var(--lightColor);
     width: 100%;
 
     @include md {

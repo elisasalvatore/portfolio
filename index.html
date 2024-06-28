@@ -18,7 +18,7 @@
 
 <body>
     <!-- START Navbar -->
-    <nav class="navbar fixed-top text-bg-light">
+    <nav class="navbar fixed-top bg-body-tertiary">
         <div class="container-fluid">
             <!-- Navbar left side -->
             <div class="nav-left">
@@ -29,6 +29,11 @@
 
             <!-- Navbar right side -->
             <div class="nav-right">
+                <div class="ctn-dark-mode">
+                    <input class="container_toggle" type="checkbox" id="switch" name="mode">
+                    <label for="switch">Toggle</label>
+                </div>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -184,7 +189,7 @@
     <!-- END Projects -->
 
     <!-- START Footer -->
-    <footer class="text-bg-light">
+    <footer class="bg-body-tertiary">
         <div class="container-fluid p-3">
             <div class="made-by">Made with Love by Elisa Salvatore.</div>
             <div class="copyright">©2024. All rights reserved.</div>

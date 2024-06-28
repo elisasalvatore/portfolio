@@ -23,6 +23,8 @@
                     padding-left: 0px;
 
                     .aboutme-list-item {
+                        color: var(--lightColor);
+
                         @include md {
                             font-size: 1.4em;
                         }
