@@ -29,6 +29,7 @@
             }
 
             p {
+                color: var(--lightColor);
                 text-align: justify;
                 line-height: 1.8em;
 
@@ -44,6 +45,7 @@
                 list-style: none;
 
                 li {
+                    color: var(--lightColor);
                     padding: 8px;
 
                     @include md {
@@ -51,22 +53,22 @@
                         font-size: 1.2em;
                     }
 
-                    &:hover {
-                        cursor: pointer;
-
-                        i,
-                        a {
-                            color: $special-color;
-                        }
-                    }
-
                     i {
                         margin-right: 10px;
                     }
 
                     a {
+                        color: var(--lightColor);
                         text-decoration: none;
-                        color: $text-light;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+
+                        i,
+                        a {
+                            color: var(--lightSpecial);
+                        }
                     }
                 }
             }
@@ -104,7 +106,7 @@
                 button {
                     margin: 10px 0;
                     color: $text-dark;
-                    background-color: $special-color;
+                    background-color: var(--lightSpecial);
                 }
             }
 

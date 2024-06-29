@@ -129,7 +129,8 @@
                 border-radius: 50px;
 
                 &:hover {
-                    background-color: darken($special-color-dark, 10%);
+                    // background-color: darken($special-color-dark, 10%);
+                    transform: scale(0.9);
                 }
             }
         }

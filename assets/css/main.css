@@ -494,7 +494,7 @@ body .title-custom {
   border-radius: 50px;
 }
 #projects .content .projects-infos .btn-to-works:hover {
-  background-color: #d39b00;
+  transform: scale(0.9);
 }
 
 footer {
@@ -553,6 +553,7 @@ footer .container-fluid div {
   }
 }
 #contact .content .contact-infos p {
+  color: var(--lightColor);
   text-align: justify;
   line-height: 1.8em;
 }
@@ -568,6 +569,7 @@ footer .container-fluid div {
   list-style: none;
 }
 #contact .content .contact-infos ul li {
+  color: var(--lightColor);
   padding: 8px;
 }
 @media (min-width: 720px) {
@@ -576,19 +578,19 @@ footer .container-fluid div {
     font-size: 1.2em;
   }
 }
+#contact .content .contact-infos ul li i {
+  margin-right: 10px;
+}
+#contact .content .contact-infos ul li a {
+  color: var(--lightColor);
+  text-decoration: none;
+}
 #contact .content .contact-infos ul li:hover {
   cursor: pointer;
 }
 #contact .content .contact-infos ul li:hover i,
 #contact .content .contact-infos ul li:hover a {
-  color: #c91f1a;
-}
-#contact .content .contact-infos ul li i {
-  margin-right: 10px;
-}
-#contact .content .contact-infos ul li a {
-  text-decoration: none;
-  color: #333;
+  color: var(--lightSpecial);
 }
 #contact .content .contact-form {
   display: flex;
@@ -620,7 +622,7 @@ footer .container-fluid div {
 #contact .content .contact-form .form button {
   margin: 10px 0;
   color: #fff;
-  background-color: #c91f1a;
+  background-color: var(--lightSpecial);
 }
 @media (min-width: 720px) {
   #contact .content .contact-form h2,
