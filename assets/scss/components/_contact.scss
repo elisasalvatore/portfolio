@@ -1,73 +1,65 @@
 #contact {
-    height: 100%;
-
-    @include md {
-        height: 100vh;
-    }
-
-    @include lg {
-        height: 100%;
-    }
-
-    @include xl {
-        height: 100vh;
-    }
-
     .content {
+        padding-top: 30px;
+
         .contact-infos {
             height: 100%;
             flex-direction: column;
 
             @include md {
-                width: 80%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                height: 50vh;
             }
 
-            .title-custom {
+            .form-heading {
                 @include md {
-                    text-align: center;
+                    width: 50%;
                 }
-            }
 
-            p {
-                color: var(--lightColor);
-                text-align: justify;
-                line-height: 1.8em;
-
-                @include md {
-                    width: 90%;
-                    text-align: center;
-                    font-size: 1.2em;
-                }
-            }
-
-            ul {
-                padding: 0;
-                list-style: none;
-
-                li {
+                p {
                     color: var(--lightColor);
-                    padding: 8px;
+                    text-align: justify;
+                    line-height: 1.8em;
 
                     @include md {
-                        padding: 10px;
                         font-size: 1.2em;
                     }
+                }
+            }
 
-                    i {
-                        margin-right: 10px;
-                    }
+            .form-list {
+                ul {
+                    padding: 0;
+                    margin-bottom: 0;
+                    list-style: none;
 
-                    a {
+                    li {
                         color: var(--lightColor);
-                        text-decoration: none;
-                    }
+                        padding: 8px;
 
-                    &:hover {
-                        cursor: pointer;
+                        @include md {
+                            font-size: 1.2em;
+                        }
 
-                        i,
+                        &:hover {
+                            cursor: pointer;
+
+                            i,
+                            a {
+                                color: var(--lightSpecial);
+                            }
+                        }
+
+                        i {
+                            margin-right: 10px;
+                        }
+
                         a {
-                            color: var(--lightSpecial);
+                            color: var(--lightColor);
+                            text-decoration: none;
                         }
                     }
                 }
@@ -76,12 +68,23 @@
 
         .contact-form {
             display: flex;
-            align-items: start;
             flex-wrap: wrap;
             height: 100%;
 
             @include md {
-                width: 80%;
+                width: 100%;
+                height: 50vh;
+                align-items: center;
+                justify-content: space-around;
+                padding: 0 30px;
+            }
+
+            @include lg {
+                padding: 0 60px;
+            }
+
+            @include xl {
+                padding: 0 100px;
             }
 
             h2 {
@@ -98,8 +101,8 @@
                 .form-floating {
                     width: 100%;
 
-                    label {
-                        display: none;
+                    label .form-label {
+                        color: #ccc;
                     }
                 }
 
@@ -107,6 +110,10 @@
                     margin: 10px 0;
                     color: $text-dark;
                     background-color: var(--lightSpecial);
+
+                    &:hover {
+                        transform: scale(0.9);
+                    }
                 }
             }
 
@@ -114,7 +121,7 @@
             .form {
                 @include md {
                     width: 50%;
-                    padding: 0 10px;
+                    height: 230px;
                 }
             }
         }

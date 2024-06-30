@@ -33,7 +33,7 @@
             <div class="nav-right">
                 <div class="ctn-dark-mode">
                     <input class="container_toggle" type="checkbox" id="switch" name="mode">
-                    <label for="switch">Toggle</label>
+                    <label class="dark-mode-label" for="switch">Toggle</label>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -77,30 +77,34 @@
     <div id="contact" class="section">
         <div class="content container-fluid">
             <div class="box contact-infos">
-                <h2 class="title-custom">Contacts</h2>
-                <p>
-                    If you have further questions, feel free to contact me using my contact information or send me a
-                    completed form.
-                </p>
+                <div class="form-heading">
+                    <h2 class="title-custom">Contacts</h2>
+                    <p>
+                        If you have further questions, feel free to contact me using my contact information or send me a
+                        completed form.
+                    </p>
+                </div>
 
-                <ul>
-                    <li>
-                        <i class="bi bi-telephone-fill"></i>
-                        <a href="tel:+390123456789">0123456789</a>
-                    </li>
-                    <li>
-                        <i class="bi bi-envelope-fill"></i>
-                        <a href="mailto:elisatest@gmail.com">elisatest@gmail.com</a>
-                    </li>
-                    <li>
-                        <i class="bi bi-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/elisa-salvatore" target="_blank">Elisa Salvatore</a>
-                    </li>
-                    <li>
-                        <i class="bi bi-github"></i>
-                        <a href="https://github.com/ElisaSalvatore" target="_blank">ElisaSalvatore</a>
-                    </li>
-                </ul>
+                <div class="form-list">
+                    <ul>
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:+390123456789">0123456789</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:elisatest@gmail.com">elisatest@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/elisa-salvatore" target="_blank">Elisa Salvatore</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-github"></i>
+                            <a href="https://github.com/ElisaSalvatore" target="_blank">ElisaSalvatore</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="box contact-form">
@@ -110,13 +114,13 @@
                     <!-- Email -->
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <label class="form-label" for="floatingInput">Email</label>
                     </div>
                     <!-- Text area -->
                     <div class="form-floating">
                         <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2"
                           style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Message</label>
+                        <label class="form-label" for="floatingTextarea2">Message</label>
                     </div>
                     <button type="button" class="btn">Send</button>
                 </div>
