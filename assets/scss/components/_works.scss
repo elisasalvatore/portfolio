@@ -76,13 +76,6 @@
                 }
 
                 p {
-                    color: var(--lightColor);
-                    text-align: justify;
-                    line-height: 1.8em;
-
-                    @include md {
-                        line-height: 1.8em;
-                    }
                     @include lg {
                         padding-right: 40px;
                     }

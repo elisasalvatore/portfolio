@@ -69,6 +69,21 @@ body .title-custom {
     font-size: 5em;
   }
 }
+body .aboutme-list-item,
+body p {
+  font-weight: 300;
+}
+body p {
+  color: var(--lightColor);
+  text-align: justify;
+  line-height: 1.8em;
+  font-size: 0.9em;
+}
+@media (min-width: 720px) {
+  body p {
+    font-size: 1.1em;
+  }
+}
 
 .btn-back-top {
   display: none;
@@ -94,11 +109,12 @@ body .title-custom {
 }
 
 .navbar {
+  width: 100vw;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100px;
+  background-color: var(--lightNavFot);
 }
 @media (min-width: 720px) {
   .navbar {
@@ -142,14 +158,17 @@ body .title-custom {
   --lightSpecial: #c91f1a;
   --lightBg: #fff;
   --lightColor: #333;
+  --lightNavFot: #f0f0f1;
+  --lightNavLinks: #fff;
+  --lightToggleMenu: #333;
 }
 .navbar .container-fluid .nav-right .ctn-dark-mode html[data-theme=dark] {
   --lightSpecial: #ffbd07;
   --lightBg: #232323;
   --lightColor: #fff;
-}
-.navbar .container-fluid .nav-right .ctn-dark-mode html .card-project img {
-  background-color: var(--lightBg);
+  --lightNavFot: #373737;
+  --lightNavLinks: #333;
+  --lightToggleMenu: #fff;
 }
 .navbar .container-fluid .nav-right .ctn-dark-mode html .ctn-dark-mode input[type=checkbox] {
   height: 0;
@@ -214,6 +233,7 @@ body .title-custom {
 }
 .navbar .container-fluid .nav-right .offcanvas {
   border: 0;
+  background-color: var(--lightSpecial);
 }
 .navbar .container-fluid .nav-right .offcanvas .btn-close {
   padding: 40px 40px 0 0;
@@ -225,6 +245,7 @@ body .title-custom {
   justify-content: center;
 }
 .navbar .container-fluid .nav-right .offcanvas-body .navbar-nav .nav-item .nav-link {
+  color: var(--lightNavLinks);
   font-size: 2em;
 }
 @media (min-width: 720px) {
@@ -233,7 +254,8 @@ body .title-custom {
   }
 }
 .navbar .container-fluid .nav-right .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
-  color: #c91f1a;
+  text-decoration: underline;
+  transform: scale(0.9);
 }
 .navbar .container-fluid .nav-right .navbar-toggler:focus,
 .navbar .container-fluid .nav-right .btn-close:focus {
@@ -314,17 +336,6 @@ body .title-custom {
 @media (min-width: 960px) {
   #skills .content .skills-infos {
     padding-left: 60px;
-  }
-}
-#skills .content .skills-infos .skills-p {
-  color: var(--lightColor);
-  text-align: justify;
-  line-height: 1.8em;
-  font-size: 0.9em;
-}
-@media (min-width: 720px) {
-  #skills .content .skills-infos .skills-p {
-    font-size: 1em;
   }
 }
 @media (min-width: 960px) {
@@ -481,11 +492,11 @@ body .title-custom {
   }
 }
 #projects .content .projects-infos .projects-card-group a:nth-child(2) img, #projects .content .projects-infos .projects-card-group a:nth-child(3) img {
-  padding: 40px;
+  padding: 20px;
 }
 @media (min-width: 720px) {
   #projects .content .projects-infos .projects-card-group a:nth-child(2) img, #projects .content .projects-infos .projects-card-group a:nth-child(3) img {
-    padding: 40px;
+    padding: 25px;
   }
 }
 #projects .content .projects-infos .btn-to-works {
@@ -503,6 +514,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--lightNavFot);
 }
 footer .container-fluid {
   display: flex;
@@ -512,7 +524,7 @@ footer .container-fluid {
 }
 footer .container-fluid div {
   font-size: 0.8em;
-  color: #333;
+  color: var(--lightColor);
 }
 @media (min-width: 960px) {
   footer .container-fluid div {
@@ -722,16 +734,6 @@ footer .container-fluid div {
   color: var(--lightColor);
   padding: 20px 0;
 }
-.section-work .content-work .box-work .work-infos p {
-  color: var(--lightColor);
-  text-align: justify;
-  line-height: 1.8em;
-}
-@media (min-width: 720px) {
-  .section-work .content-work .box-work .work-infos p {
-    line-height: 1.8em;
-  }
-}
 @media (min-width: 960px) {
   .section-work .content-work .box-work .work-infos p {
     padding-right: 40px;
@@ -742,14 +744,17 @@ html {
   --lightSpecial: #c91f1a;
   --lightBg: #fff;
   --lightColor: #333;
+  --lightNavFot: #f0f0f1;
+  --lightNavLinks: #fff;
+  --lightToggleMenu: #333;
 }
 html[data-theme=dark] {
   --lightSpecial: #ffbd07;
   --lightBg: #232323;
   --lightColor: #fff;
-}
-html .card-project img {
-  background-color: var(--lightBg);
+  --lightNavFot: #373737;
+  --lightNavLinks: #333;
+  --lightToggleMenu: #fff;
 }
 html .ctn-dark-mode input[type=checkbox] {
   height: 0;

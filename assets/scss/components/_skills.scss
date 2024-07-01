@@ -12,17 +12,6 @@
             @include lg {
                 padding-left: 60px;
             }
-
-            .skills-p {
-                color: var(--lightColor);
-                text-align: justify;
-                line-height: 1.8em;
-                font-size: 0.9em;
-
-                @include md {
-                    font-size: 1em;
-                }
-            }
         }
 
         .skills-chart {

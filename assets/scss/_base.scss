@@ -54,4 +54,20 @@ body {
         @include title-style;
         padding: 20px 0;
     }
+
+    .aboutme-list-item,
+    p {
+        font-weight: 300;
+    }
+
+    p {
+        color: var(--lightColor);
+        text-align: justify;
+        line-height: 1.8em;
+        font-size: 0.9em;
+
+        @include md {
+            font-size: 1.1em;
+        }
+    }
 }

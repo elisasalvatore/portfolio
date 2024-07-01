@@ -114,10 +114,10 @@
                     // Applica un padding alle immagini (2, 3) dei loghi dei progetti
                     &:nth-child(2) img,
                     &:nth-child(3) img {
-                        padding: 40px;
+                        padding: 20px;
 
                         @include md {
-                            padding: 40px;
+                            padding: 25px;
                         }
                     }
                 }

@@ -5,16 +5,17 @@ html {
     --lightSpecial: #c91f1a;
     --lightBg: #fff;
     --lightColor: #333;
+    --lightNavFot: #f0f0f1;
+    --lightNavLinks: #fff;
+    --lightToggleMenu: #333;
 
     &[data-theme="dark"] {
         --lightSpecial: #ffbd07;
         --lightBg: #232323;
         --lightColor: #fff;
-    }
-
-    // colore di sfondo
-    .card-project img {
-        background-color: var(--lightBg);
+        --lightNavFot: #373737;
+        --lightNavLinks: #333;
+        --lightToggleMenu: #fff;
     }
 
     .ctn-dark-mode {

@@ -1,7 +1,8 @@
 .navbar {
-    @include flex-center-all;
     width: 100vw;
     height: 100px;
+    @include flex-center-all;
+    background-color: var(--lightNavFot);
 
     @include md {
         height: 120px;
@@ -61,6 +62,7 @@
             // Menu nav links
             .offcanvas {
                 border: 0;
+                background-color: var(--lightSpecial);
 
                 .btn-close {
                     padding: 40px 40px 0 0;
@@ -73,6 +75,7 @@
                     .navbar-nav {
                         .nav-item {
                             .nav-link {
+                                color: var(--lightNavLinks);
                                 font-size: 2em;
 
                                 @include md {
@@ -80,7 +83,8 @@
                                 }
 
                                 &:hover {
-                                    color: $special-color;
+                                    text-decoration: underline;
+                                    transform: scale(0.9);
                                 }
                             }
                         }
