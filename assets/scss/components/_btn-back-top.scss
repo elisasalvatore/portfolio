@@ -6,17 +6,21 @@
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-    opacity: 0.4;
+    opacity: 0.6;
+    background-color: var(--lightIconColor);
+    border-radius: 50%;
+    // quando ha la proprietà display settata su flex (vedi script.js)
+    justify-content: center;
+    align-items: center;
 
     @include md {
         width: 40px;
         height: 40px;
     }
 
-    img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $bg-light;
+    .fa-arrow-up {
+        width: 80%;
+        height: 80%;
+        color: var(--lightNavLinks);
     }
 }

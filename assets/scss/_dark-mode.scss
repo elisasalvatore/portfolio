@@ -7,7 +7,8 @@ html {
     --lightColor: #333;
     --lightNavFot: #f0f0f1;
     --lightNavLinks: #fff;
-    --lightToggleMenu: #333;
+    --lightIconColor: #403e3e;
+    --lightHoverColorNavLinks: #333;
 
     &[data-theme="dark"] {
         --lightSpecial: #ffbd07;
@@ -15,7 +16,8 @@ html {
         --lightColor: #fff;
         --lightNavFot: #373737;
         --lightNavLinks: #333;
-        --lightToggleMenu: #fff;
+        --lightIconColor: #fff;
+        --lightHoverColorNavLinks: #fff;
     }
 
     .ctn-dark-mode {
