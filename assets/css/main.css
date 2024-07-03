@@ -132,14 +132,18 @@ body p {
   width: 50%;
 }
 .navbar .container-fluid .nav-left .logo {
-  width: 70px;
-  height: 70px;
-  background-color: #fff;
-  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  background: var(--logoTheme);
+  background-size: 75px;
+  height: 75px;
 }
 @media (min-width: 720px) {
   .navbar .container-fluid .nav-left .logo {
     width: 100px;
+    height: 100px;
+    background-size: 100px;
     height: 100px;
   }
 }
@@ -166,6 +170,7 @@ body p {
   --lightNavLinks: #fff;
   --lightIconColor: #403e3e;
   --lightHoverColorNavLinks: #333;
+  --logoTheme: url(../images/logos/logo-elisi-quadrato.png) no-repeat;
 }
 .navbar .container-fluid .nav-right .ctn-dark-mode html[data-theme=dark] {
   --lightSpecial: #ffbd07;
@@ -175,6 +180,7 @@ body p {
   --lightNavLinks: #333;
   --lightIconColor: #fff;
   --lightHoverColorNavLinks: #fff;
+  --logoTheme: url(../images/logos/elisi-logo-fff.png) no-repeat;
 }
 .navbar .container-fluid .nav-right .ctn-dark-mode html .ctn-dark-mode input[type=checkbox] {
   height: 0;
@@ -755,6 +761,7 @@ html {
   --lightNavLinks: #fff;
   --lightIconColor: #403e3e;
   --lightHoverColorNavLinks: #333;
+  --logoTheme: url(../images/logos/logo-elisi-quadrato.png) no-repeat;
 }
 html[data-theme=dark] {
   --lightSpecial: #ffbd07;
@@ -764,6 +771,7 @@ html[data-theme=dark] {
   --lightNavLinks: #333;
   --lightIconColor: #fff;
   --lightHoverColorNavLinks: #fff;
+  --logoTheme: url(../images/logos/elisi-logo-fff.png) no-repeat;
 }
 html .ctn-dark-mode input[type=checkbox] {
   height: 0;

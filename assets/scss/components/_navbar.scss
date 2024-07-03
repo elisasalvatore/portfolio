@@ -16,13 +16,17 @@
             width: 50%;
 
             .logo {
-                width: 70px;
-                height: 70px;
-                background-color: #fff;
-                border-radius: 50%;
+                width: 75px;
+                height: 75px;
+                object-fit: cover;
+                background: var(--logoTheme);
+                background-size: 75px;
+                height: 75px;
 
                 @include md {
                     width: 100px;
+                    height: 100px;
+                    background-size: 100px;
                     height: 100px;
                 }
             }

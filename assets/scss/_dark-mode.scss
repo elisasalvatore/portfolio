@@ -9,6 +9,7 @@ html {
     --lightNavLinks: #fff;
     --lightIconColor: #403e3e;
     --lightHoverColorNavLinks: #333;
+    --logoTheme: url(../images/logos/logo-elisi-quadrato.png) no-repeat;
 
     &[data-theme="dark"] {
         --lightSpecial: #ffbd07;
@@ -18,6 +19,7 @@ html {
         --lightNavLinks: #333;
         --lightIconColor: #fff;
         --lightHoverColorNavLinks: #fff;
+        --logoTheme: url(../images/logos/elisi-logo-fff.png) no-repeat;
     }
 
     .ctn-dark-mode {
