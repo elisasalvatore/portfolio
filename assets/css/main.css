@@ -583,7 +583,8 @@ footer .container-fluid div {
 }
 #contact .content .contact-infos .form-list ul li {
   color: var(--lightColor);
-  padding: 8px;
+  padding: 10px;
+  width: 250px;
 }
 @media (min-width: 720px) {
   #contact .content .contact-infos .form-list ul li {
@@ -592,17 +593,16 @@ footer .container-fluid div {
 }
 #contact .content .contact-infos .form-list ul li:hover {
   cursor: pointer;
-}
-#contact .content .contact-infos .form-list ul li:hover i,
-#contact .content .contact-infos .form-list ul li:hover a {
   color: var(--lightSpecial);
 }
-#contact .content .contact-infos .form-list ul li i {
-  margin-right: 10px;
+#contact .content .contact-infos .form-list ul li:hover a {
+  font-weight: bold;
+  color: var(--lightSpecial);
 }
 #contact .content .contact-infos .form-list ul li a {
   color: var(--lightColor);
   text-decoration: none;
+  margin-left: 10px;
 }
 #contact .content .contact-form {
   display: flex;
