@@ -545,8 +545,10 @@ footer .container-fluid div {
   }
 }
 
-#contact .content {
-  padding-top: 30px;
+#contact {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
 }
 #contact .content .contact-infos {
   height: 100%;
@@ -598,6 +600,10 @@ footer .container-fluid div {
 #contact .content .contact-infos .form-list ul li:hover a {
   font-weight: bold;
   color: var(--lightSpecial);
+}
+#contact .content .contact-infos .form-list ul li i {
+  width: 30px;
+  height: 30px;
 }
 #contact .content .contact-infos .form-list ul li a {
   color: var(--lightColor);

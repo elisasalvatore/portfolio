@@ -1,7 +1,10 @@
 #contact {
-    .content {
-        padding-top: 30px;
+    // mobile device only (view other styles in _base.scss .section)
+    display: flex;
+    flex-direction: column;
+    height: 900px;
 
+    .content {
         .contact-infos {
             height: 100%;
             flex-direction: column;
@@ -53,6 +56,11 @@
                                 font-weight: bold;
                                 color: var(--lightSpecial);
                             }
+                        }
+
+                        i {
+                            width: 30px;
+                            height: 30px;
                         }
 
                         a {
