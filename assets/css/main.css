@@ -550,6 +550,16 @@ footer .container-fluid div {
   flex-direction: column;
   height: 900px;
 }
+@media (min-width: 720px) {
+  #contact {
+    height: 100%;
+  }
+}
+@media (min-width: 960px) {
+  #contact {
+    padding-top: 50px;
+  }
+}
 #contact .content .contact-infos {
   height: 100%;
   flex-direction: column;
@@ -651,6 +661,7 @@ footer .container-fluid div {
   color: #ccc;
 }
 #contact .content .contact-form .form button {
+  width: 100%;
   margin: 10px 0;
   color: #fff;
   background-color: var(--lightSpecial);

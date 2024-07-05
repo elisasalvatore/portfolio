@@ -15,7 +15,6 @@
     <script defer src="../node_modules/@fortawesome/fontawesome-free/css/all.css"></script>
     <script defer src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 
-
     <!-- Adding favicon -->
     <link rel="shortcut icon" href="../assets/images/logos/logo-elisi-quadrato.png">
 </head>
@@ -85,8 +84,8 @@
                 <div class="form-heading">
                     <h2 class="title-custom">Contacts</h2>
                     <p>
-                        If you have further questions, feel free to contact me using my contact information or send me a
-                        completed form.
+                        Feel free to send me a message about any information you might need. I would love to hear from
+                        you!
                     </p>
                 </div>
 
@@ -115,33 +114,40 @@
             <div class="box contact-form">
                 <h2 class="title-custom fs-1">Let's get in touch!</h2>
                 <!-- Form -->
-                <div class="form">
-                    <!-- First and Last name  -->
+                <form id="contact-form" class="form">
+                    <!-- First name  -->
                     <div class="row w-100 p-0 m-0 d-flex align-items-center justify-content-between">
                         <div class="col form-floating  p-0 pe-2">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="First name">
-                            <label class="form-label" for="floatingInput">First name</label>
+                            <input type="text" id="user_name" name="user_name" class="form-control"
+                              placeholder="First name" required>
+                            <label class="form-label" for="user_name">First name</label>
                         </div>
 
+                        <!-- Last name -->
                         <div class="col form-floating  p-0">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Second name">
-                            <label class="form-label" for="floatingInput">Second name</label>
+                            <input type="text" id="user_surname" name="user_surname" class="form-control"
+                              placeholder="Last name" required>
+                            <label class="form-label" for="user_surname">Last name</label>
                         </div>
                     </div>
 
                     <!-- Email -->
                     <div class="form-floating my-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="youremail@test-com">
-                        <label class="form-label" for="floatingInput">Email address</label>
+                        <input type="email" id="user_email" name="user_email" class="form-control"
+                          placeholder="Email address" required>
+                        <label class="form-label" for="user_email">Email address</label>
                     </div>
+
                     <!-- Text area -->
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2"
-                          style="height: 100px"></textarea>
-                        <label class="form-label" for="floatingTextarea2">Message</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Leave a message here"
+                          style="height: 100px" required></textarea>
+                        <label class="form-label" for="message">Message</label>
                     </div>
-                    <button type="button" class="btn">Send</button>
-                </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="submit-btn btn">Send</button>
+                </form>
             </div>
         </div>
     </div>
@@ -161,6 +167,10 @@
     </a>
     <!-- END 'Back to the top' button -->
 
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- JS Custom EmailJS -->
+    <script src="../assets/js/emailjs.js"></script>
     <!-- JS Custom script -->
     <script src="../assets/js/script.js"></script>
 </body>
