@@ -173,7 +173,7 @@ body p {
   --logoTheme: url(../images/logos/logo-000.png) no-repeat;
   --bgImgDarkModeLabel: url(../images/circle-half-stroke-solid-fff.svg);
 }
-.navbar .container-fluid .nav-right .ctn-dark-mode html[data-theme=dark] {
+.navbar .container-fluid .nav-right .ctn-dark-mode html .dark-mode {
   --specialColor: #ffbd07;
   --bgColor: #232323;
   --textColor: #fff;
@@ -184,12 +184,17 @@ body p {
   --logoTheme: url(../images/logos/logo-fff.png) no-repeat;
   --bgImgDarkModeLabel: url(../images//circle-half-stroke-solid.svg);
 }
-.navbar .container-fluid .nav-right .ctn-dark-mode html .ctn-dark-mode input[type=checkbox] {
+.navbar .container-fluid .nav-right .ctn-dark-mode html .ctn-theme {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.navbar .container-fluid .nav-right .ctn-dark-mode html .ctn-theme input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
-.navbar .container-fluid .nav-right .ctn-dark-mode html .dark-mode-label {
+.navbar .container-fluid .nav-right .ctn-dark-mode html .theme-label {
   cursor: pointer;
   text-indent: -9999px;
   width: 55px;
@@ -204,7 +209,7 @@ body p {
   border-radius: 100px;
   position: relative;
 }
-.navbar .container-fluid .nav-right .ctn-dark-mode html .dark-mode-label:after {
+.navbar .container-fluid .nav-right .ctn-dark-mode html .theme-label:after {
   content: "";
   background-image: var(--bgImgDarkModeLabel);
   background-repeat: no-repeat;
@@ -218,10 +223,10 @@ body p {
   left: 4px;
   transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
 }
-.navbar .container-fluid .nav-right .ctn-dark-mode html input:checked + .dark-mode-label {
+.navbar .container-fluid .nav-right .ctn-dark-mode html input:checked + .theme-label {
   background: #ffbd07;
 }
-.navbar .container-fluid .nav-right .ctn-dark-mode html input:checked + .dark-mode-label:after {
+.navbar .container-fluid .nav-right .ctn-dark-mode html input:checked + .theme-label:after {
   left: calc(100% - 5px);
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
@@ -784,7 +789,7 @@ html {
   --logoTheme: url(../images/logos/logo-000.png) no-repeat;
   --bgImgDarkModeLabel: url(../images/circle-half-stroke-solid-fff.svg);
 }
-html[data-theme=dark] {
+html .dark-mode {
   --specialColor: #ffbd07;
   --bgColor: #232323;
   --textColor: #fff;
@@ -795,12 +800,17 @@ html[data-theme=dark] {
   --logoTheme: url(../images/logos/logo-fff.png) no-repeat;
   --bgImgDarkModeLabel: url(../images//circle-half-stroke-solid.svg);
 }
-html .ctn-dark-mode input[type=checkbox] {
+html .ctn-theme {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+html .ctn-theme input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
-html .dark-mode-label {
+html .theme-label {
   cursor: pointer;
   text-indent: -9999px;
   width: 55px;
@@ -815,7 +825,7 @@ html .dark-mode-label {
   border-radius: 100px;
   position: relative;
 }
-html .dark-mode-label:after {
+html .theme-label:after {
   content: "";
   background-image: var(--bgImgDarkModeLabel);
   background-repeat: no-repeat;
@@ -829,10 +839,10 @@ html .dark-mode-label:after {
   left: 4px;
   transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
 }
-html input:checked + .dark-mode-label {
+html input:checked + .theme-label {
   background: #ffbd07;
 }
-html input:checked + .dark-mode-label:after {
+html input:checked + .theme-label:after {
   left: calc(100% - 5px);
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);

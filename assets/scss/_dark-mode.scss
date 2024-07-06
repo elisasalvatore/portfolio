@@ -12,7 +12,8 @@ html {
     --logoTheme: url(../images/logos/logo-000.png) no-repeat;
     --bgImgDarkModeLabel: url(../images/circle-half-stroke-solid-fff.svg);
 
-    &[data-theme="dark"] {
+    // &[data-theme="dark"],
+    .dark-mode {
         --specialColor: #ffbd07;
         --bgColor: #232323;
         --textColor: #fff;
@@ -24,7 +25,11 @@ html {
         --bgImgDarkModeLabel: url(../images//circle-half-stroke-solid.svg);
     }
 
-    .ctn-dark-mode {
+    .ctn-theme {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
         input[type="checkbox"] {
             height: 0;
             width: 0;
@@ -32,7 +37,7 @@ html {
         }
     }
 
-    .dark-mode-label {
+    .theme-label {
         cursor: pointer;
         text-indent: -9999px;
         width: 55px;
@@ -64,11 +69,11 @@ html {
         }
     }
 
-    input:checked + .dark-mode-label {
+    input:checked + .theme-label {
         background: $special-color-dark;
     }
 
-    input:checked + .dark-mode-label:after {
+    input:checked + .theme-label:after {
         left: calc(100% - 5px);
         -webkit-transform: translateX(-100%);
         -moz-transform: translateX(-100%);
