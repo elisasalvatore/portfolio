@@ -2,7 +2,7 @@ footer {
     width: 100vw;
     height: 100px;
     @include flex-center-all;
-    background-color: var(--lightNavFot);
+    background-color: var(--bgNavFot);
 
     .container-fluid {
         @include flex-center-all;
@@ -10,7 +10,7 @@ footer {
 
         div {
             font-size: 0.8em;
-            color: var(--lightColor);
+            color: var(--textColor);
 
             @include lg {
                 font-size: 1em;

@@ -15,7 +15,7 @@ $title-size: 2.6em;
 // colore e dimensione dei titoli h2
 @mixin title-style {
     font-size: $title-size;
-    color: var(--lightColor);
+    color: var(--textColor);
     width: 100%;
 
     @include md {

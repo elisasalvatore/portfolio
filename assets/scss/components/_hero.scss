@@ -1,7 +1,7 @@
 .title-hello {
     h1 {
         font-size: 25vw;
-        color: var(--lightColor);
+        color: var(--textColor);
         width: 100%;
 
         @include xl {
@@ -9,7 +9,7 @@
         }
 
         span {
-            color: var(--lightSpecial);
+            color: var(--specialColor);
         }
     }
 }

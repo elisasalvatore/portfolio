@@ -9,7 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  background-color: var(--lightBg);
+  background-color: var(--bgColor);
 }
 body .section {
   width: 100vw;
@@ -50,7 +50,7 @@ body .section .content .box {
 }
 body .title-custom {
   font-size: 2.6em;
-  color: var(--lightColor);
+  color: var(--textColor);
   width: 100%;
   padding: 20px 0;
 }
@@ -74,7 +74,7 @@ body p {
   font-weight: 300;
 }
 body p {
-  color: var(--lightColor);
+  color: var(--textColor);
   text-align: justify;
   line-height: 1.8em;
   font-size: 0.9em;
@@ -94,7 +94,7 @@ body p {
   right: 20px;
   cursor: pointer;
   opacity: 0.6;
-  background-color: var(--lightIconColor);
+  background-color: var(--bgIcons);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -108,7 +108,7 @@ body p {
 .btn-back-top .fa-arrow-up {
   width: 80%;
   height: 80%;
-  color: var(--lightNavLinks);
+  color: var(--textNavLinks);
 }
 
 .navbar {
@@ -117,7 +117,7 @@ body p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--lightNavFot);
+  background-color: var(--bgNavFot);
 }
 @media (min-width: 720px) {
   .navbar {
@@ -163,24 +163,26 @@ body p {
   align-items: center;
 }
 .navbar .container-fluid .nav-right .ctn-dark-mode html {
-  --lightSpecial: #c91f1a;
-  --lightBg: #fff;
-  --lightColor: #333;
-  --lightNavFot: #f0f0f1;
-  --lightNavLinks: #fff;
-  --lightIconColor: #403e3e;
-  --lightHoverColorNavLinks: #333;
+  --specialColor: #c91f1a;
+  --bgColor: #fff;
+  --textColor: #333;
+  --bgNavFot: #f0f0f1;
+  --textNavLinks: #fff;
+  --textNavLinksHover: #333;
+  --bgIcons: #403e3e;
   --logoTheme: url(../images/logos/logo-000.png) no-repeat;
+  --bgImgDarkModeLabel: url(../images/circle-half-stroke-solid-fff.svg);
 }
 .navbar .container-fluid .nav-right .ctn-dark-mode html[data-theme=dark] {
-  --lightSpecial: #ffbd07;
-  --lightBg: #232323;
-  --lightColor: #fff;
-  --lightNavFot: #373737;
-  --lightNavLinks: #333;
-  --lightIconColor: #fff;
-  --lightHoverColorNavLinks: #fff;
+  --specialColor: #ffbd07;
+  --bgColor: #232323;
+  --textColor: #fff;
+  --bgNavFot: #373737;
+  --textNavLinks: #333;
+  --textNavLinksHover: #fff;
+  --bgIcons: #fff;
   --logoTheme: url(../images/logos/logo-fff.png) no-repeat;
+  --bgImgDarkModeLabel: url(../images//circle-half-stroke-solid.svg);
 }
 .navbar .container-fluid .nav-right .ctn-dark-mode html .ctn-dark-mode input[type=checkbox] {
   height: 0;
@@ -192,7 +194,7 @@ body p {
   text-indent: -9999px;
   width: 55px;
   height: 30px;
-  background: var(--lightSpecial);
+  background: var(--specialColor);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -204,7 +206,8 @@ body p {
 }
 .navbar .container-fluid .nav-right .ctn-dark-mode html .dark-mode-label:after {
   content: "";
-  background: #fff;
+  background-image: var(--bgImgDarkModeLabel);
+  background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   -webkit-border-radius: 50%;
@@ -238,7 +241,7 @@ body p {
 }
 .navbar .container-fluid .nav-right .navbar-toggler .fa-bars {
   font-size: 1.8em;
-  color: var(--lightIconColor);
+  color: var(--bgIcons);
 }
 .navbar .container-fluid .nav-right .navbar-toggler .fa-bars:hover {
   transform: rotate(45deg);
@@ -246,7 +249,7 @@ body p {
 }
 .navbar .container-fluid .nav-right .offcanvas {
   border: 0;
-  background-color: var(--lightSpecial);
+  background-color: var(--specialColor);
 }
 .navbar .container-fluid .nav-right .offcanvas .btn-close {
   padding: 40px 40px 0 0;
@@ -258,7 +261,7 @@ body p {
   justify-content: center;
 }
 .navbar .container-fluid .nav-right .offcanvas-body .navbar-nav .nav-item .nav-link {
-  color: var(--lightNavLinks);
+  color: var(--textNavLinks);
   font-size: 2em;
 }
 @media (min-width: 720px) {
@@ -268,7 +271,7 @@ body p {
 }
 .navbar .container-fluid .nav-right .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
   transform: scale(0.9);
-  color: var(--lightHoverColorNavLinks);
+  color: var(--textNavLinksHover);
 }
 .navbar .container-fluid .nav-right .navbar-toggler:focus,
 .navbar .container-fluid .nav-right .btn-close:focus {
@@ -277,7 +280,7 @@ body p {
 
 .title-hello h1 {
   font-size: 25vw;
-  color: var(--lightColor);
+  color: var(--textColor);
   width: 100%;
 }
 @media (min-width: 1200px) {
@@ -286,7 +289,7 @@ body p {
   }
 }
 .title-hello h1 span {
-  color: var(--lightSpecial);
+  color: var(--specialColor);
 }
 
 @media (min-width: 720px) {
@@ -314,7 +317,7 @@ body p {
   padding-left: 0px;
 }
 #about-me .content .aboutme-infos .aboutme-list ul .aboutme-list-item {
-  color: var(--lightColor);
+  color: var(--textColor);
 }
 @media (min-width: 720px) {
   #about-me .content .aboutme-infos .aboutme-list ul .aboutme-list-item {
@@ -387,7 +390,7 @@ body p {
   }
 }
 #skills .content .skills-chart .column tr {
-  color: var(--lightColor);
+  color: var(--textColor);
 }
 #skills .content .skills-chart .column tr td {
   width: 50px;
@@ -428,7 +431,7 @@ body p {
 }
 #projects .content .projects-infos .projects-card-group a {
   text-decoration: none;
-  background-color: var(--lightBg);
+  background-color: var(--bgColor);
 }
 #projects .content .projects-infos .projects-card-group a .card-project {
   width: 150px;
@@ -514,7 +517,7 @@ body p {
 }
 #projects .content .projects-infos .btn-to-works {
   color: #fff;
-  background-color: var(--lightSpecial);
+  background-color: var(--specialColor);
   border-radius: 50px;
 }
 #projects .content .projects-infos .btn-to-works:hover {
@@ -527,7 +530,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--lightNavFot);
+  background-color: var(--bgNavFot);
 }
 footer .container-fluid {
   display: flex;
@@ -537,7 +540,7 @@ footer .container-fluid {
 }
 footer .container-fluid div {
   font-size: 0.8em;
-  color: var(--lightColor);
+  color: var(--textColor);
 }
 @media (min-width: 960px) {
   footer .container-fluid div {
@@ -579,7 +582,7 @@ footer .container-fluid div {
   }
 }
 #contact .content .contact-infos .form-heading p {
-  color: var(--lightColor);
+  color: var(--textColor);
   text-align: justify;
   line-height: 1.8em;
 }
@@ -594,7 +597,7 @@ footer .container-fluid div {
   list-style: none;
 }
 #contact .content .contact-infos .form-list ul li {
-  color: var(--lightColor);
+  color: var(--textColor);
   padding: 10px;
   width: 250px;
 }
@@ -605,18 +608,18 @@ footer .container-fluid div {
 }
 #contact .content .contact-infos .form-list ul li:hover {
   cursor: pointer;
-  color: var(--lightSpecial);
+  color: var(--specialColor);
 }
 #contact .content .contact-infos .form-list ul li:hover a {
   font-weight: bold;
-  color: var(--lightSpecial);
+  color: var(--specialColor);
 }
 #contact .content .contact-infos .form-list ul li i {
   width: 30px;
   height: 30px;
 }
 #contact .content .contact-infos .form-list ul li a {
-  color: var(--lightColor);
+  color: var(--textColor);
   text-decoration: none;
   margin-left: 10px;
 }
@@ -664,7 +667,7 @@ footer .container-fluid div {
   width: 100%;
   margin: 10px 0;
   color: #fff;
-  background-color: var(--lightSpecial);
+  background-color: var(--specialColor);
 }
 #contact .content .contact-form .form button:hover {
   transform: scale(0.9);
@@ -761,7 +764,7 @@ footer .container-fluid div {
   }
 }
 .section-work .content-work .box-work .work-infos .work-title {
-  color: var(--lightColor);
+  color: var(--textColor);
   padding: 20px 0;
 }
 @media (min-width: 960px) {
@@ -771,24 +774,26 @@ footer .container-fluid div {
 }
 
 html {
-  --lightSpecial: #c91f1a;
-  --lightBg: #fff;
-  --lightColor: #333;
-  --lightNavFot: #f0f0f1;
-  --lightNavLinks: #fff;
-  --lightIconColor: #403e3e;
-  --lightHoverColorNavLinks: #333;
+  --specialColor: #c91f1a;
+  --bgColor: #fff;
+  --textColor: #333;
+  --bgNavFot: #f0f0f1;
+  --textNavLinks: #fff;
+  --textNavLinksHover: #333;
+  --bgIcons: #403e3e;
   --logoTheme: url(../images/logos/logo-000.png) no-repeat;
+  --bgImgDarkModeLabel: url(../images/circle-half-stroke-solid-fff.svg);
 }
 html[data-theme=dark] {
-  --lightSpecial: #ffbd07;
-  --lightBg: #232323;
-  --lightColor: #fff;
-  --lightNavFot: #373737;
-  --lightNavLinks: #333;
-  --lightIconColor: #fff;
-  --lightHoverColorNavLinks: #fff;
+  --specialColor: #ffbd07;
+  --bgColor: #232323;
+  --textColor: #fff;
+  --bgNavFot: #373737;
+  --textNavLinks: #333;
+  --textNavLinksHover: #fff;
+  --bgIcons: #fff;
   --logoTheme: url(../images/logos/logo-fff.png) no-repeat;
+  --bgImgDarkModeLabel: url(../images//circle-half-stroke-solid.svg);
 }
 html .ctn-dark-mode input[type=checkbox] {
   height: 0;
@@ -800,7 +805,7 @@ html .dark-mode-label {
   text-indent: -9999px;
   width: 55px;
   height: 30px;
-  background: var(--lightSpecial);
+  background: var(--specialColor);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -812,7 +817,8 @@ html .dark-mode-label {
 }
 html .dark-mode-label:after {
   content: "";
-  background: #fff;
+  background-image: var(--bgImgDarkModeLabel);
+  background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   -webkit-border-radius: 50%;

@@ -31,7 +31,7 @@
 
                 a {
                     text-decoration: none;
-                    background-color: var(--lightBg);
+                    background-color: var(--bgColor);
 
                     .card-project {
                         width: 150px;
@@ -125,7 +125,7 @@
 
             .btn-to-works {
                 color: $text-dark;
-                background-color: var(--lightSpecial);
+                background-color: var(--specialColor);
                 border-radius: 50px;
 
                 &:hover {

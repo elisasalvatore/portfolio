@@ -31,7 +31,7 @@
                 }
 
                 p {
-                    color: var(--lightColor);
+                    color: var(--textColor);
                     text-align: justify;
                     line-height: 1.8em;
 
@@ -48,7 +48,7 @@
                     list-style: none;
 
                     li {
-                        color: var(--lightColor);
+                        color: var(--textColor);
                         padding: 10px;
                         width: 250px;
 
@@ -58,11 +58,11 @@
 
                         &:hover {
                             cursor: pointer;
-                            color: var(--lightSpecial);
+                            color: var(--specialColor);
 
                             a {
                                 font-weight: bold;
-                                color: var(--lightSpecial);
+                                color: var(--specialColor);
                             }
                         }
 
@@ -72,7 +72,7 @@
                         }
 
                         a {
-                            color: var(--lightColor);
+                            color: var(--textColor);
                             text-decoration: none;
                             margin-left: 10px;
                         }
@@ -125,7 +125,7 @@
                     width: 100%;
                     margin: 10px 0;
                     color: $text-dark;
-                    background-color: var(--lightSpecial);
+                    background-color: var(--specialColor);
 
                     &:hover {
                         transform: scale(0.9);

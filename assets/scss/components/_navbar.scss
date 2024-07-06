@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100px;
     @include flex-center-all;
-    background-color: var(--lightNavFot);
+    background-color: var(--bgNavFot);
 
     @include md {
         height: 120px;
@@ -56,7 +56,7 @@
 
                 .fa-bars {
                     font-size: 1.8em;
-                    color: var(--lightIconColor);
+                    color: var(--bgIcons);
 
                     &:hover {
                         transform: rotate(45deg);
@@ -68,7 +68,7 @@
             // Menu nav links
             .offcanvas {
                 border: 0;
-                background-color: var(--lightSpecial);
+                background-color: var(--specialColor);
 
                 .btn-close {
                     padding: 40px 40px 0 0;
@@ -81,7 +81,7 @@
                     .navbar-nav {
                         .nav-item {
                             .nav-link {
-                                color: var(--lightNavLinks);
+                                color: var(--textNavLinks);
                                 font-size: 2em;
 
                                 @include md {
@@ -90,7 +90,7 @@
 
                                 &:hover {
                                     transform: scale(0.9);
-                                    color: var(--lightHoverColorNavLinks);
+                                    color: var(--textNavLinksHover);
                                 }
                             }
                         }

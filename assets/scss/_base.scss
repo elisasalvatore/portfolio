@@ -11,7 +11,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
-    background-color: var(--lightBg);
+    background-color: var(--bgColor);
 
     .section {
         width: 100vw;
@@ -61,7 +61,7 @@ body {
     }
 
     p {
-        color: var(--lightColor);
+        color: var(--textColor);
         text-align: justify;
         line-height: 1.8em;
         font-size: 0.9em;

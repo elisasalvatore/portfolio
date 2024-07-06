@@ -7,7 +7,7 @@
     right: 20px;
     cursor: pointer;
     opacity: 0.6;
-    background-color: var(--lightIconColor);
+    background-color: var(--bgIcons);
     border-radius: 50%;
     // quando ha la proprietà display settata su flex (vedi script.js)
     justify-content: center;
@@ -21,6 +21,6 @@
     .fa-arrow-up {
         width: 80%;
         height: 80%;
-        color: var(--lightNavLinks);
+        color: var(--textNavLinks);
     }
 }
