@@ -50,7 +50,7 @@
                     li {
                         color: var(--textColor);
                         padding: 10px;
-                        width: 250px;
+                        padding-left: 0;
 
                         @include md {
                             font-size: 1.2em;
@@ -61,7 +61,6 @@
                             color: var(--specialColor);
 
                             a {
-                                font-weight: bold;
                                 color: var(--specialColor);
                             }
                         }

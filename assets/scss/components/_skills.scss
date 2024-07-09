@@ -46,6 +46,14 @@
                 tr {
                     color: var(--textColor);
 
+                    th {
+                        font-size: 0.8em;
+
+                        @include lg {
+                            font-size: 1em;
+                        }
+                    }
+
                     td {
                         width: 50px;
                         border-top-right-radius: 20px;

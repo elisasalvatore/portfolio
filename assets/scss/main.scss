@@ -10,6 +10,9 @@
 // responsive layout
 @import "breakpoints";
 
+// dark mode
+@import "dark-mode";
+
 // components
 @import "components/btn-back-top";
 @import "components/navbar";
@@ -20,9 +23,3 @@
 @import "components/footer";
 @import "components/contact";
 @import "components/works";
-
-// using charts.css
-@import "../../node_modules/charts.css/dist/charts.css";
-
-// dark mode
-@import "dark-mode";

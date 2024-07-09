@@ -11,7 +11,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
-    background-color: var(--bgColor);
+    background-color: var(--bgColor) !important;
 
     .section {
         width: 100vw;
