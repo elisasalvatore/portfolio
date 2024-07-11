@@ -3,12 +3,12 @@
 html {
     // &[data-theme="light"]
     --specialColor: #c91f1a;
-    --bgColor: #fff;
-    --textColor: #333;
+    --bgColor: #ffffff;
+    --textColor: #232323;
     --bgNavFot: #f0f0f1;
-    --textNavLinks: #fff;
-    --textNavLinksHover: #333;
-    --bgIcons: #403e3e;
+    --textNavLinks: #ffffff;
+    --textNavLinksHover: #232323;
+    --bgIcons: #232323;
     --logoTheme: url(../images/logos/logo-000.png) no-repeat;
     --bgImgDarkModeLabel: url(../images/circle-half-stroke-solid-fff.svg);
 
@@ -16,11 +16,11 @@ html {
     .dark-mode {
         --specialColor: #ffbd07;
         --bgColor: #232323;
-        --textColor: #fff;
+        --textColor: #ffffff;
         --bgNavFot: #373737;
-        --textNavLinks: #333;
-        --textNavLinksHover: #fff;
-        --bgIcons: #fff;
+        --textNavLinks: #232323;
+        --textNavLinksHover: #ffffff;
+        --bgIcons: #ffffff;
         --logoTheme: url(../images/logos/logo-fff.png) no-repeat;
         --bgImgDarkModeLabel: url(../images//circle-half-stroke-solid.svg);
     }
