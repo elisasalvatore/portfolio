@@ -1,10 +1,4 @@
 #projects {
-    height: 100%;
-
-    @include md {
-        height: 100vh;
-    }
-
     .content {
         .projects-infos {
             flex-direction: column;
@@ -12,10 +6,6 @@
             @include md {
                 width: 100%;
                 text-align: center;
-            }
-
-            .title-custom {
-                padding: 20px 0;
             }
 
             .projects-card-group {
@@ -37,14 +27,12 @@
                         width: 150px;
                         height: 150px;
                         margin: 0 10px;
-                        margin-bottom: 20px;
                         border: none;
 
                         @include md {
                             justify-content: space-between;
                             width: 205px;
                             height: 205px;
-                            margin-bottom: 0px;
                         }
 
                         @include lg {
@@ -90,23 +78,15 @@
                         &:hover .title-project {
                             opacity: 1;
                             z-index: 2;
-                            padding-top: 42%;
+                            padding-top: 40%;
                         }
 
                         // Al passaggio in hover sulla TERZA CARD, definisce a che altezza viene mostrato il titolo all'interno della card
-                        &:hover:nth-child(3) .title-project {
+                        &:hover .title-item-ixi {
                             padding-top: 30%;
 
-                            @include sm {
-                                padding-top: 20%;
-                            }
-
-                            @include md {
-                                padding-top: 30%;
-                            }
-
                             @include lg {
-                                padding-top: 45%;
+                                padding-top: 40%;
                             }
                         }
                     }

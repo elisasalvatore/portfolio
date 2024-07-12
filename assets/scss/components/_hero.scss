@@ -1,15 +1,20 @@
-.title-hello {
-    h1 {
-        font-size: 25vw;
-        color: var(--textColor);
-        width: 100%;
+#hero {
+    padding-top: 20px;
+    height: 100vh;
 
-        @include xl {
-            font-size: 400px;
-        }
+    .title-hello {
+        h1 {
+            font-size: 25vw;
+            color: var(--textColor);
+            width: 100%;
 
-        span {
-            color: var(--specialColor);
+            @include xl {
+                font-size: 400px;
+            }
+
+            span {
+                color: var(--specialColor);
+            }
         }
     }
 }
