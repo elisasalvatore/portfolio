@@ -52,6 +52,7 @@ body .title-custom {
   font-size: 2.6em;
   color: var(--textColor);
   width: 100%;
+  padding: 20px 0;
 }
 @media (min-width: 720px) {
   body .title-custom {
@@ -635,11 +636,6 @@ footer .container-fluid div {
     height: 100%;
   }
 }
-@media (min-width: 960px) {
-  #contact {
-    padding-top: 50px;
-  }
-}
 #contact .content .contact-infos {
   height: 100%;
   flex-direction: column;
@@ -756,17 +752,31 @@ footer .container-fluid div {
   }
 }
 
+#hotel-pomelia,
+#circolo-santa-brigida,
+#ixi-management {
+  height: 100%;
+}
+
+#hotel-pomelia {
+  padding-top: 120px;
+}
+@media (min-width: 720px) {
+  #hotel-pomelia {
+    padding-top: 140px;
+  }
+}
+
+#circolo-santa-brigida,
+#ixi-management {
+  padding-top: 0px;
+}
+
 .section-work {
-  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
-}
-@media (min-width: 720px) {
-  .section-work {
-    margin-top: 20px;
-  }
+  margin-bottom: 20px;
 }
 .section-work .content-work {
   display: flex;
@@ -784,14 +794,20 @@ footer .container-fluid div {
 }
 .section-work .content-work .box-work {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+@media (min-width: 720px) {
+  .section-work .content-work .box-work {
+    height: 70vh;
+  }
+}
 @media (min-width: 960px) {
   .section-work .content-work .box-work {
+    height: 55vh;
     flex-direction: row;
   }
 }
@@ -831,7 +847,7 @@ footer .container-fluid div {
 }
 @media (min-width: 720px) {
   .section-work .content-work .box-work .work-infos {
-    padding: 20px 120px;
+    padding: 0 20px;
   }
 }
 @media (min-width: 960px) {

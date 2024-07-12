@@ -1,11 +1,24 @@
-.section-work {
-    height: 50vh;
-    @include flex-center-all;
-    margin-top: 40px;
+#hotel-pomelia,
+#circolo-santa-brigida,
+#ixi-management {
+    height: 100%;
+}
 
+#hotel-pomelia {
+    padding-top: 120px;
     @include md {
-        margin-top: 20px;
+        padding-top: 140px;
     }
+}
+
+#circolo-santa-brigida,
+#ixi-management {
+    padding-top: 0px;
+}
+
+.section-work {
+    @include flex-center-all;
+    margin-bottom: 20px;
 
     .content-work {
         @include flex-center-all;
@@ -21,11 +34,16 @@
 
         .box-work {
             width: 100%;
-            height: 80vh;
+            height: 85vh;
             @include flex-center-all;
             flex-direction: column;
 
+            @include md {
+                height: 70vh;
+            }
+
             @include lg {
+                height: 55vh;
                 flex-direction: row;
             }
 
@@ -63,7 +81,7 @@
                 justify-content: center;
 
                 @include md {
-                    padding: 20px 120px;
+                    padding: 0 20px;
                 }
 
                 @include lg {
