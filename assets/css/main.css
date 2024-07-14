@@ -699,6 +699,7 @@ footer .container-fluid div {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
+  margin-bottom: 40px;
 }
 @media (min-width: 720px) {
   #contact .content .contact-form {
