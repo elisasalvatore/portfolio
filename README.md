@@ -4,7 +4,7 @@ Welcome to the source code for my personal portfolio website! This project showc
 
 ## Deployment
 
-The website is live and accessible at: [Elisa Salvatore Portfolio](https://elisasalvatore.github.io/portfolio/).
+The website is live and accessible at: [Elisa Salvatore Portfolio](https://elisasalvatore.github.io/portfolio-html-css/).
 
 ## Features
 - **Homepage**: Presents an overview of my professional profile.
